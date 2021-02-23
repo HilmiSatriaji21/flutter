@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Kawal Covid"),
+        title: Text(""),
       ),
     
         body: Container(
@@ -24,11 +24,33 @@ class MyApp extends StatelessWidget {
                         Padding(
             padding: EdgeInsets.all(6.0),
           ),
-                   Center(
-                child: Text(
-              'KAWAL COVID',
-              style: TextStyle(fontSize: 30, fontWeight: FontWeight.w400),
-            )),
+          Column(
+            children: <Widget>[
+              Container(
+                height: 200,
+          width: double.infinity,
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('assets/images/header.jpg'),
+              fit: BoxFit.cover)),
+               padding: const EdgeInsets.all(8.0),
+                     child: Align(
+                       alignment: Alignment.topLeft,
+                       child: Text(
+                         'KAWAL COVID',
+                         style: TextStyle(
+                           decoration: TextDecoration.underline,
+                            decorationColor: Colors.black,
+                            decorationStyle: TextDecorationStyle.solid,
+                            decorationThickness: 2,
+                           fontSize: 24,
+                           fontWeight: FontWeight.bold,
+                           color: Colors.black),
+                       ),
+                     ),
+              ),
+            ],
+          ),
              Padding(
             padding: EdgeInsets.all(6.0),
           ),
