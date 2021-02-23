@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/nav-drawer.dart';
 
 void main() => runApp(MaterialApp(
   debugShowCheckedModeBanner: false,
@@ -15,6 +16,7 @@ class MyApp extends StatelessWidget {
       appBar: AppBar(
         title: Text(""),
       ),
+      endDrawer: DrawerWidget(),
     
         body: Container(
           padding: EdgeInsets.only(top: 20),
@@ -27,7 +29,7 @@ class MyApp extends StatelessWidget {
           Column(
             children: <Widget>[
               Container(
-                height: 200,
+          height: 200,
           width: double.infinity,
           decoration: BoxDecoration(
             image: DecorationImage(
